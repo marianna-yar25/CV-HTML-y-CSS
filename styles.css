@@ -1,0 +1,57 @@
+/* ===== Variables CSS ===== */
+:root {
+    --color-principal: #2C3E50; /* azul oscuro */
+    --color-secundario: #04558F; /* rojo */
+  }
+  
+  /* ===== Estilo general (herencia) ===== */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* gris claro */
+    color: var(--color-principal); /* usa variable */
+    margin: 20px;
+  }
+  
+  /* ===== Encabezado ===== */
+  h1 {
+    color: var(--color-secundario); /* cambia color de texto */
+    font-size: 36px; /* tamaño de fuente */
+    border-bottom: 3px solid var(--color-secundario); /* borde */
+    padding-bottom: 10px;
+  }
+  
+  /* ===== Contenedor principal ===== */
+  .cv {
+    background-color: #ffffff; /* fondo blanco */
+    border: 2px solid var(--color-principal);
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #aaa;
+  }
+
+  /* Contenedor de foto + contacto */
+.header {
+    display: flex;              /* Activa Flexbox */
+    align-items: center;        /* Centra verticalmente */
+    gap: 20px;                  /* Espacio entre foto y datos */
+    margin-bottom: 20px;
+  }
+  
+  /* ===== Imagen ===== */
+  .foto {
+    width: 150px;   /* modifica tamaño */
+    border-radius: 50%; /* redonda */
+    border: 3px solid var(--color-secundario);
+  }
+
+  /* Contacto */
+  .contacto {
+    background-color: #f8f8f8;  /* Fondo gris claro */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+  
+  
